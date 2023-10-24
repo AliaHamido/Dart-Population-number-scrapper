@@ -35,7 +35,7 @@ void main() async {
       'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population';
 
   final connection = PostgreSQLConnection('localhost', 5432, 'PopulationNumb',
-      username: 'postgres', password: 'asdzxc123456');
+      username: 'postgres', password: '1234');
   await connection.open();
 
   await crawlAndInsert(startUrl, connection);
